@@ -8,7 +8,11 @@ export function Navigation() {
       <ul className="navigation__bar">
         {navigationItems.map(function(item) {
           return (
-            <a href={item.href} className="navigation__item">
+            <a
+              key={item.title}
+              href={item.href}
+              className="navigation__item"
+            >
               {item.title}
             </a>
           );
