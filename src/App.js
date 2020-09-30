@@ -1,14 +1,21 @@
 import React from 'react';
 import './App.scss';
+import { Navigation } from './Navigation';
+import { Header } from './Header';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Cassiopeia</h1>
+    <div className="container">
+      <header className="row">
+        <Header />
+        <Navigation />
       </header>
+      <main className="row">
+        Content
+      </main>
+      <footer className="row">
+        Footer
+      </footer>
     </div>
   );
 }
-
-export default App;
