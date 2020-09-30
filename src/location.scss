@@ -1,0 +1,19 @@
+.location {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+
+    &__point {
+        width: 12px;
+        padding-right: 12px;
+    }
+
+    &__city {
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: blue;
+    }
+}
