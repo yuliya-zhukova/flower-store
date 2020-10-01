@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import { Navigation } from './Navigation';
 import { Header } from './Header';
+import { Content } from './Content';
 
 export default function App() {
   return (
@@ -11,7 +12,7 @@ export default function App() {
         <Navigation />
       </header>
       <main className="row">
-        Content
+        <Content />
       </main>
       <footer className="row">
         Footer
