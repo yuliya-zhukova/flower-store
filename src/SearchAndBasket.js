@@ -7,7 +7,7 @@ import basket from './basket.png';
 export function SearchAndBasket() {
   return (
       <div className="searchAndBasket">
-          <a href="#" className="searchAndBasket__loop">
+          <a href="#" className="searchAndBasket__search">
               <img src={search} alt="Search"></img>
           </a>
           <a href="#" className="searchAndBasket__basket">
