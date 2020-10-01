@@ -1,7 +1,7 @@
 import React from "react";
 import "./content.scss";
 
-import { Products } from './Products';
+import { Products } from "./Products";
 
 import image_big from "./image_big.png";
 import image_middle from "./image_middle.png";
