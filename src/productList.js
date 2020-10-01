@@ -1,41 +1,37 @@
-import React from "react";
-
-import image_small from "./image_small.png";
-
 export const productList = [
     {
         title: "Title",
-        image: "./image_small.png",
+        image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
         title: "Title",
-        image: {image_small},
+        image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
         title: "Title",
-        image: {image_small},
+        image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
         title: "Title",
-        image: {image_small},
+        image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
         title: "Title",
-        image: {image_small},
+        image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
         title: "Title",
-        image: {image_small},
+        image: "",
         price: "Price",
         oldPrice: "Old Price"
     }
