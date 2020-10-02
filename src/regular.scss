@@ -1,0 +1,15 @@
+.regular {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    position: relative;
+    margin: 20px 0 50px;
+  }
+
+  &__info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}

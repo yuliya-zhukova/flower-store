@@ -2,44 +2,14 @@ import React from "react";
 import "./content.scss";
 
 import { Primary } from "./Primary";
+import { Regular } from "./Regular";
 import { Sections } from "./Sections";
-
-import image_middle from "./image_middle.png";
 
 export function Content() {
   return (
     <div className="content">
       <Primary />
-      <div className="content__main">
-        <div className="content__items">
-          <div className="content__item">
-            <img src={image_middle} alt="Gifts"></img>
-            <div className="content__item-info">
-              <h2 className="content__item-title">Title</h2>
-              <p className="content__item-description">Description</p>
-              <button
-                type="button"
-                className="content__button content__button_view-now"
-              >
-                View now
-              </button>
-            </div>
-          </div>
-          <div className="content__item">
-            <img src={image_middle} alt="Plants"></img>
-            <div className="content__item-info">
-              <h2 className="content__item-title">Title</h2>
-              <p className="content__item-description">Description</p>
-              <button
-                type="button"
-                className="content__button content__button_view-now"
-              >
-                View now
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Regular />
       <Sections />
     </div>
   );
