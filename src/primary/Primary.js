@@ -3,7 +3,7 @@ import "./primary.scss";
 
 import { primaryItem } from "./primaryItem";
 
-import image_big from "./image_big.png";
+import image_big from "../images/image_big.png";
 
 export function Primary() {
   return (

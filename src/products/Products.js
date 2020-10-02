@@ -3,7 +3,7 @@ import "./products.scss";
 
 import { productList } from "./productList";
 
-import image_small from "./image_small.png";
+import image_small from "../images/image_small.png";
 
 export function Products() {
   return (

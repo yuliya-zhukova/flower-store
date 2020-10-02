@@ -3,7 +3,7 @@ import "./regular.scss";
 
 import { regularList } from "./regularList";
 
-import image_middle from "./image_middle.png";
+import image_middle from "../images/image_middle.png";
 
 export function Regular() {
   return (

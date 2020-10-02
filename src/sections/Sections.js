@@ -1,7 +1,7 @@
 import React from "react";
 import "./sections.scss";
 
-import { Products } from "./Products";
+import { Products } from "../products/Products";
 import { sectionList } from "./sectionList";
 
 export function Sections() {

@@ -1,9 +1,9 @@
 import React from "react";
 import "./content.scss";
 
-import { Primary } from "./Primary";
-import { Regular } from "./Regular";
-import { Sections } from "./Sections";
+import { Primary } from "../primary/Primary";
+import { Regular } from "../regular/Regular";
+import { Sections } from "../sections/Sections";
 
 export function Content() {
   return (

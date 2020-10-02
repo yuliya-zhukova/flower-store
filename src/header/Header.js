@@ -1,8 +1,8 @@
 import React from 'react';
 import './header.scss';
 
-import { Location } from './Location';
-import { SearchAndBasket } from './SearchAndBasket';
+import { Location } from '../location/Location';
+import { SearchAndBasket } from '../search/SearchAndBasket';
 
 export function Header() {
   return (

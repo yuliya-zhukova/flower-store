@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
-import { Navigation } from './Navigation';
-import { Header } from './Header';
-import { Content } from './Content';
+import { Navigation } from './navigation/Navigation';
+import { Header } from './header/Header';
+import { Content } from './content/Content';
 
 export default function App() {
   return (
