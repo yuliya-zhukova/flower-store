@@ -1,7 +1,7 @@
 import React from "react";
 import "./content.scss";
 
-import { Products } from "./Products";
+import { Sections } from "./Sections";
 
 import image_big from "./image_big.png";
 import image_middle from "./image_middle.png";
@@ -52,8 +52,7 @@ export function Content() {
           </div>
         </div>
       </div>
-      <Products />
-      <Products />
+      <Sections />
     </div>
   );
 }
