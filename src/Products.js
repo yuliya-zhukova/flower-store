@@ -13,7 +13,7 @@ export function Products() {
           <div className="products__item">
             <img src={image_small} alt="New"></img>
             <div className="products__item-info">
-              <h2 className="products__item-title">{product.title}</h2>
+              <h4 className="products__item-title">{product.title}</h4>
               <p className="products__item-price">{product.price}</p>
             </div>
           </div>

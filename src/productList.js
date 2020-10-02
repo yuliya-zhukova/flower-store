@@ -1,36 +1,36 @@
 export const productList = [
     {
-        title: "Title",
+        title: "Name",
         image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
-        title: "Title",
+        title: "Name",
         image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
-        title: "Title",
+        title: "Name",
         image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
-        title: "Title",
+        title: "Name",
         image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
-        title: "Title",
+        title: "Name",
         image: "",
         price: "Price",
         oldPrice: "Old Price"
     },
     {
-        title: "Title",
+        title: "Name",
         image: "",
         price: "Price",
         oldPrice: "Old Price"
