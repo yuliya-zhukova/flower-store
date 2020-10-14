@@ -9,4 +9,8 @@
 .row {
     width: 1160px;
     margin: 0 auto;
+
+    &_footer {
+        width: 100%;
+    }
 }

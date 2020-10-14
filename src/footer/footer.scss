@@ -1,0 +1,19 @@
+.footer {
+  background-color: black;
+  color: white;
+
+  &__row {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &_copyright {
+      color: #afb1bd;
+    }
+  }
+
+  &__column {
+    width: 20%;
+  }
+}
