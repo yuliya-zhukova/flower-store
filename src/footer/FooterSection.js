@@ -11,7 +11,7 @@ export function FooterSection() {
       {footerColumnNames.map(function (name) {
         return (
           <div className="footer__column">
-            <div class="footer__columnName">{name}</div>
+            <h4 className="footer__columnName">{name}</h4>
             <FooterColumn id={name} />
           </div>
         );

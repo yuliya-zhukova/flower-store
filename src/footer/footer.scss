@@ -1,4 +1,5 @@
 .footer {
+  padding: 50px 0;
   background-color: black;
   color: white;
 
@@ -9,11 +10,34 @@
     justify-content: space-between;
 
     &_copyright {
+      margin-top: 30px;
+      padding-top: 20px;
       color: #afb1bd;
+      border-top: 1px solid #afb1bd;
+      font-size: 12px;
     }
   }
 
   &__column {
     width: 20%;
+  }
+
+  &__list-item {
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    margin: 10px 0;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+
+      &:hover {
+        color: #afb1bd;
+      }
+    }
   }
 }
