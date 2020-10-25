@@ -1,0 +1,36 @@
+.button {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #aaa;
+    color: white;
+
+    &::after {
+        content: "→";
+        padding-left: 0.5rem;
+    }
+
+    &:hover {
+        background-color: #ccc;
+    }
+
+    &:active {
+        background-color: #ddd;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:focus-visible {
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+
+    &:-moz-focusring {
+        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+    }
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+}
