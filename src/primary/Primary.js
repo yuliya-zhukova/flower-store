@@ -2,8 +2,15 @@ import React from "react";
 import "./primary.scss";
 
 import { primaryItem } from "./primaryItem";
+import { Button } from "../button/Button";
 
 import image_big from "../images/image_big.png";
+
+const buttonName = "Shop now";
+
+function pressButton () {
+  console.log("Bamm!");
+}
 
 export function Primary() {
   return (
@@ -16,12 +23,7 @@ export function Primary() {
           <p className="primary__description">
               {primaryItem.description}
           </p>
-          <button
-            type="button"
-            className="button button__shop-now"
-          >
-            Shop now
-          </button>
+          <Button clickEvent={pressButton} title={buttonName} />
         </div>
     </div>
   );

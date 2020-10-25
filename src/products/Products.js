@@ -8,9 +8,9 @@ import image_small from "../images/image_small.png";
 export function Products() {
   return (
     <div className="products">
-      {productList.map(function (product) {
+      {productList.map(function (product, i) {
         return (
-          <div className="products__item">
+          <div className="products__item"key={i}>
             <img src={image_small} alt="New"></img>
             <div className="products__item-info">
               <h4 className="products__item-title">{product.title}</h4>
