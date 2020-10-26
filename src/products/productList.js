@@ -2,37 +2,35 @@ export const productList = [
     {
         title: "Name",
         image: "",
-        price: "Price",
-        oldPrice: "Old Price"
+        price: 100
     },
     {
         title: "Name",
         image: "",
-        price: "Price",
-        oldPrice: "Old Price"
+        price: 300
     },
     {
         title: "Name",
         image: "",
-        price: "Price",
-        oldPrice: "Old Price"
+        price: 80,
+        oldPrice: 150
     },
     {
         title: "Name",
         image: "",
-        price: "Price",
-        oldPrice: "Old Price"
+        price: 3,
+        oldPrice: 300
     },
     {
         title: "Name",
         image: "",
-        price: "Price",
-        oldPrice: "Old Price"
+        price: 333,
+        oldPrice: 666
     },
     {
         title: "Name",
         image: "",
-        price: "Price",
-        oldPrice: "Old Price"
+        price: 10,
+        oldPrice: 100
     }
 ]

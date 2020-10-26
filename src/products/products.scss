@@ -1,9 +1,11 @@
-.products {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  overflow: hidden;
+.product {
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
 
   &__item {
     width: 260px;
@@ -11,6 +13,25 @@
 
     &-info {
       text-align: center;
+    }
+  }
+
+  &__price-row {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__price {
+
+    &:after {
+      content: " $";
+      padding-left: 0;
+    }
+
+    &_old {
+      margin-left: 1rem;
+      text-decoration: line-through;
+      color: grey;
     }
   }
 }
