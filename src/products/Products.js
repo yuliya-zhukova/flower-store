@@ -2,8 +2,17 @@ import React from "react";
 import "./Products.scss";
 
 import { productList } from "./productList";
+import { Button } from "../button/Button";
 
 import image_small from "../images/image_small.png";
+
+function toBasket () {
+  console.log("To the Basket!");
+}
+
+function toWishList () {
+  console.log("To the Wish List!");
+}
 
 export function Products() {
   return (
@@ -11,7 +20,13 @@ export function Products() {
       {productList.map(function (product, i) {
         return (
           <div className="product__item" key={i}>
-            <img src={image_small} alt="New"></img>
+            <div className="product__image">
+              <img src={image_small} alt="New"></img>
+              <div className="product__button-block">
+                <Button classNames={"product__button product__button_to-basket"} clickEvent={toBasket}/>
+                <Button classNames={"product__button product__button_like"} clickEvent={toWishList} />
+              </div>
+            </div>
             <div className="product__item-info">
               <h4 className="product__item-title">{product.title}</h4>
               <div className="product__price-row">

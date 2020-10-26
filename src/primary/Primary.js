@@ -23,7 +23,7 @@ export function Primary() {
           <p className="primary__description">
               {primaryItem.description}
           </p>
-          <Button clickEvent={pressButton} title={buttonName} />
+          <Button classNames={"button"} clickEvent={pressButton} title={buttonName} />
         </div>
     </div>
   );
