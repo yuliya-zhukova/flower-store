@@ -1,0 +1,41 @@
+.section {
+    &__slider {
+        margin-bottom: 100px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__navigation {
+        display: flex;
+    }
+
+    &__nav-item {
+        margin-left: 1rem;
+        text-decoration: none;
+        color: grey;
+
+        &_disable {
+            pointer-events: none;
+            cursor: default;
+            color: lightgray;
+        }
+    }
+
+    &__direction {
+        &_left:after {
+            content: "←";
+        }
+
+        &_right:after {
+            content: "→";
+        }
+    }
+}
