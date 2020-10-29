@@ -15,8 +15,8 @@
   }
 
   &__button {
-    width: 3rem;
-    height: 3rem;
+    width: 46px;
+    height: 46px;
     background-color: white;
     outline: none;
     border: none;
@@ -51,6 +51,11 @@
       text-align: center;
     }
 
+    &-title {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
     &:hover .product__button-block {
       visibility: visible;
     }
@@ -62,6 +67,8 @@
   }
 
   &__price {
+    font-size: 14px;
+
     &:after {
       content: " $";
     }
