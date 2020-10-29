@@ -1,5 +1,5 @@
 import React from "react";
-import "./regular.scss";
+import "./Regular.scss";
 
 import { regularList } from "./regularList";
 import { Button } from "../button/Button";

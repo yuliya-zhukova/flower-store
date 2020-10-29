@@ -1,5 +1,5 @@
 import React from "react";
-import "./content.scss";
+import "./Content.scss";
 
 import { Primary } from "../primary/Primary";
 import { Regular } from "../regular/Regular";

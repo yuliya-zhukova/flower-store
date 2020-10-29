@@ -1,5 +1,5 @@
 import React from 'react';
-import './navigation.scss';
+import './Navigation.scss';
 import { navigationItems } from './navigationItems';
 
 export function Navigation() {

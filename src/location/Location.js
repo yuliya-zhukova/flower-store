@@ -1,5 +1,5 @@
 import React from 'react';
-import './location.scss';
+import './Location.scss';
 
 import locationPoint from './locationPoint.png';
 

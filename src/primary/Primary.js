@@ -1,5 +1,5 @@
 import React from "react";
-import "./primary.scss";
+import "./Primary.scss";
 
 import { primaryItem } from "./primaryItem";
 import { Button } from "../button/Button";

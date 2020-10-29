@@ -1,5 +1,5 @@
 import React from 'react';
-import './searchAndBasket.scss';
+import './SearchAndBasket.scss';
 
 import search from './search.png';
 import basket from './basket.png';
