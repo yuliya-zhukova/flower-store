@@ -23,8 +23,8 @@ export function Products() {
             <div className="product__image">
               <img src={image_small} alt="New"></img>
               <div className="product__button-block">
-                <Button classNames={"product__button product__button_to-basket"} clickEvent={toBasket}/>
-                <Button classNames={"product__button product__button_like"} clickEvent={toWishList} />
+                <Button classNames={"button button__product button__product_to-basket"} clickEvent={toBasket}/>
+                <Button classNames={"button button__product button__product_like"} clickEvent={toWishList} />
               </div>
             </div>
             <div className="product__item-info">

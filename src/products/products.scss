@@ -14,27 +14,6 @@
     box-sizing: border-box;
   }
 
-  &__button {
-    width: 46px;
-    height: 46px;
-    background-color: white;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-
-    &:hover {
-      background-color: lightpink;
-    }
-
-    &_to-basket:after {
-      content: url('./basket-small.png');
-    }
-
-    &_like:after {
-      content: url('./heart-small.png');
-    }
-  }
-
   &__row {
     width: 100%;
     display: flex;

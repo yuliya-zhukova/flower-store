@@ -22,7 +22,7 @@ export function Regular() {
             <div className="regular__info">
               <h2 className="regular__title">{regularItem.title}</h2>
               <p className="regular__description">{regularItem.description}</p>
-              <Button classNames={"button"} clickEvent={pressButton} title={buttonName}/>
+              <Button classNames={"button button_transparent"} clickEvent={pressButton} title={buttonName}/>
             </div>
           </div>
         );

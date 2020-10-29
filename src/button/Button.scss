@@ -33,4 +33,41 @@
     &::-moz-focus-inner {
         border: 0;
     }
+
+    &_transparent {
+        color: #000;
+        background-color: rgba(0, 0, 0, 0);
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+            background-color:rgba(0, 0, 0, 0);
+        }
+    }
+
+    &__product {
+        width: 46px;
+        height: 46px;
+        background-color: white;
+        outline: none;
+        padding: 0;
+
+        &:hover {
+          background-color: lightpink;
+        }
+
+        &_to-basket:after {
+          content: url('./basket-small.png');
+          padding: 0;
+        }
+
+        &_like:after {
+          content: url('./heart-small.png');
+          padding: 0;
+        }
+      }
 }
