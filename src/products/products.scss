@@ -1,31 +1,29 @@
 .product {
-  &__image {
+  &__window {
     position: relative;
-  }
-
-  &__button-block {
-    visibility: hidden;
+    overflow: hidden;
     width: 100%;
-    position: absolute;
-    bottom: 2rem;
-    display: flex;
-    justify-content: space-around;
-    padding: 0 3rem;
-    box-sizing: border-box;
+
+    background-color: palevioletred;
+    border: 1px solid red;
   }
 
   &__row {
-    width: 100%;
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    overflow: hidden;
+
+    left: 0;
+  }
+
+  &__row-item {
+    width: 300px;
+    padding-right: 40px;
+    box-sizing: border-box;
   }
 
   &__item {
-    width: 260px;
-    margin-right: 40px;
-
     &-info {
       text-align: center;
     }
@@ -38,6 +36,30 @@
     &:hover .product__button-block {
       visibility: visible;
     }
+  }
+
+  &__image {
+    position: relative;
+    width: 260px;
+    overflow: hidden;
+
+    & img {
+    width: 260px;
+
+      display: block;
+      object-fit: contain;
+    }
+  }
+
+  &__button-block {
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3rem;
+    box-sizing: border-box;
   }
 
   &__price-row {
