@@ -29,14 +29,4 @@
             color: lightgray;
         }
     }
-
-    &__direction {
-        &_left:after {
-            content: "←";
-        }
-
-        &_right:after {
-            content: "→";
-        }
-    }
 }
