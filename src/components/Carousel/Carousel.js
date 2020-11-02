@@ -2,9 +2,9 @@ import React from "react";
 import "./Carousel.scss";
 
 import { Button } from "../button/Button";
-import { carouselItemContent } from "./CarouselItem/carouselItemContent";
 import { CarouselItem } from "./CarouselItem/CarouselItem";
-import { carouselList } from "./carouselList";
+import { carouselList } from "../../demoData/carouselList";
+import { carouselItemContent } from "../../demoData/carouselItemContent";
 
 let clickMoveLeft = 300;
 let clickMoveRight = 0;

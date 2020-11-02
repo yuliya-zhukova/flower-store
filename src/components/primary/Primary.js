@@ -1,7 +1,7 @@
 import React from "react";
 import "./Primary.scss";
 
-import { primaryItem } from "./primaryItem";
+import { primaryItem } from "../../demoData/primaryItem";
 import { Button } from "../button/Button";
 
 const buttonName = "Shop now";

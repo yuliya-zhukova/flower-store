@@ -1,7 +1,7 @@
 import React from "react";
 import "./CarouselItem.scss";
 
-import { carouselItemContent } from "./carouselItemContent";
+import { carouselItemContent } from "../../../demoData/carouselItemContent";
 import { Button } from "../../button/Button";
 
 function toBasket () {

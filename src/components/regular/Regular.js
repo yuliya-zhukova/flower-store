@@ -1,7 +1,7 @@
 import React from "react";
 import "./Regular.scss";
 
-import { regularList } from "./regularList";
+import { regularList } from "../../demoData/regularList";
 import { Button } from "../button/Button";
 
 const buttonName = "View now";
