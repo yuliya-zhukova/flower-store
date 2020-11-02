@@ -1,7 +1,6 @@
 import React from "react";
 import "./CarouselItem.scss";
 
-import { carouselItemContent } from "../../../demoData/carouselItemContent";
 import { Button } from "../../button/Button";
 
 function toBasket () {
@@ -18,9 +17,7 @@ export function CarouselItem() {
   return (
     <div className="product__window">
       <div className="product__row">
-        {carouselItemContent.map(function (product, i) {
-          return (
-            <div className="product__row-item" key={i}>
+            <div className="product__row-item">
               <div className="product__item">
                 <div className="product__image">
                   <img src={image_small} alt="New"></img>
@@ -30,22 +27,13 @@ export function CarouselItem() {
                   </div>
                 </div>
                 <div className="product__item-info">
-                  <h4 className="product__item-title">{product.title}</h4>
+                  <h4 className="product__item-title">Name</h4>
                   <div className="product__price-row">
-                    <div className="product__price">{product.price}</div>
-                    {
-                      product.oldPrice ? (
-                      <div className="product__price product__price_old">{product.oldPrice}</div>
-                      ) : (
-                        <></>
-                      )
-                    }
+                    <div className="product__price"></div>
                   </div>
                 </div>
               </div>
             </div>
-          );
-        })}
       </div>
     </div>
   );
