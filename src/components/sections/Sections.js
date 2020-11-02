@@ -2,8 +2,8 @@ import React from "react";
 import "./Sections.scss";
 
 import { Button } from "../button/Button";
-import { productList } from "../products/productList";
-import { Products } from "../products/Products";
+import { productList } from "./products/productList";
+import { Products } from "./products/Products";
 import { sectionList } from "./sectionList";
 
 let clickMoveLeft = 300;

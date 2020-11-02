@@ -4,8 +4,6 @@ import "./Regular.scss";
 import { regularList } from "./regularList";
 import { Button } from "../button/Button";
 
-import image_middle from "../images/image_middle.png";
-
 const buttonName = "View now";
 
 function pressButton () {
@@ -13,6 +11,8 @@ function pressButton () {
 }
 
 export function Regular() {
+  const image_middle = "images/image_middle.png";
+
   return (
     <div className="regular">
       {regularList.map(function (regularItem, i) {

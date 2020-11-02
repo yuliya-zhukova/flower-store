@@ -2,9 +2,7 @@ import React from "react";
 import "./Products.scss";
 
 import { productList } from "./productList";
-import { Button } from "../button/Button";
-
-import image_small from "../images/image_small.png";
+import { Button } from "../../button/Button";
 
 function toBasket () {
   console.log("To the Basket!");
@@ -15,6 +13,8 @@ function toWishList () {
 }
 
 export function Products() {
+  const image_small = "images/image_small.png";
+
   return (
     <div className="product__window">
       <div className="product__row">

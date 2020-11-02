@@ -4,8 +4,6 @@ import "./Primary.scss";
 import { primaryItem } from "./primaryItem";
 import { Button } from "../button/Button";
 
-import image_big from "../images/image_big.png";
-
 const buttonName = "Shop now";
 
 function pressButton () {
@@ -13,6 +11,8 @@ function pressButton () {
 }
 
 export function Primary() {
+  const image_big = "images/image_big.png";
+
   return (
     <div className="primary">
       <img src={image_big} alt="Discount"></img>

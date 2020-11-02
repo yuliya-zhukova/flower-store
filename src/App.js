@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.scss';
-import { Navigation } from './navigation/Navigation';
-import { Header } from './header/Header';
-import { Content } from './content/Content';
-import { Footer } from './footer/Footer';
+import { Navigation } from './components/navigation/Navigation';
+import { Header } from './components/header/Header';
+import { Content } from './components/content/Content';
+import { Footer } from './components/footer/Footer';
 
 export default function App() {
   return (
