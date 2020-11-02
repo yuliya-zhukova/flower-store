@@ -1,4 +1,4 @@
-export const productList = [
+export const carouselItemContent = [
     {
         title: "Name",
         image: "",

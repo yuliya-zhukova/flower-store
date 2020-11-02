@@ -1,14 +1,14 @@
 import React from "react";
-import "./Sections.scss";
+import "./Carousel.scss";
 
 import { Button } from "../button/Button";
-import { productList } from "./products/productList";
-import { Products } from "./products/Products";
-import { sectionList } from "./sectionList";
+import { carouselItemContent } from "./CarouselItem/carouselItemContent";
+import { CarouselItem } from "./CarouselItem/CarouselItem";
+import { carouselList } from "./carouselList";
 
 let clickMoveLeft = 300;
 let clickMoveRight = 0;
-let productRowLength = productList.length;
+let productRowLength = carouselItemContent.length;
 
 function pressButtonLeft () {
   document.querySelector('.product__row').style.left = "-" + clickMoveLeft + "px";
@@ -25,10 +25,10 @@ function pressButtonRight () {
   clickMoveRight = clickMoveRight + 300;
 }
 
-export function Sections() {
+export function Carousel() {
   return (
     <div className="section">
-      {sectionList.map(function (section, i) {
+      {carouselList.map(function (section, i) {
           return (
             <div key={i} className="section__slider">
               <div className="section__header">
@@ -40,7 +40,7 @@ export function Sections() {
                   <Button title={"→"} classNames={"section__nav-item section__nav-item_right"} clickEvent={pressButtonRight}/>
                 </div>
               </div>
-              <Products />
+              <CarouselItem />
             </div>
           );
         })}

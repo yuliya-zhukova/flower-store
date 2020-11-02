@@ -1,4 +1,4 @@
-export const sectionList = [
+export const carouselList = [
     {
         title: "New"
     },

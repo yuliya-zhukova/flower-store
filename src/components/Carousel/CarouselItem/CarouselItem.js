@@ -1,7 +1,7 @@
 import React from "react";
-import "./Products.scss";
+import "./CarouselItem.scss";
 
-import { productList } from "./productList";
+import { carouselItemContent } from "./carouselItemContent";
 import { Button } from "../../button/Button";
 
 function toBasket () {
@@ -12,13 +12,13 @@ function toWishList () {
   console.log("To the Wish List!");
 }
 
-export function Products() {
+export function CarouselItem() {
   const image_small = "images/image_small.png";
 
   return (
     <div className="product__window">
       <div className="product__row">
-        {productList.map(function (product, i) {
+        {carouselItemContent.map(function (product, i) {
           return (
             <div className="product__row-item" key={i}>
               <div className="product__item">
