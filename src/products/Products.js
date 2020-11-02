@@ -20,8 +20,8 @@ export function Products() {
       <div className="product__row">
         {productList.map(function (product, i) {
           return (
-            <div className="product__row-item">
-              <div className="product__item" key={i}>
+            <div className="product__row-item" key={i}>
+              <div className="product__item">
                 <div className="product__image">
                   <img src={image_small} alt="New"></img>
                   <div className="product__button-block">
