@@ -17,7 +17,21 @@ export function Carousel(props) {
             <Button title={"→"} classNames={"section__nav-item section__nav-item_right"} />
           </div>
         </div>
-        <CarouselItem />
+        <div className="product__window">
+          <div className="product__row">
+            {props.items.map(function (item, i) {
+              return (
+                <CarouselItem
+                image={item.image}
+                name={item.name}
+                price={item.price}
+                oldPrice={item.oldPrice}
+                key={i}
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

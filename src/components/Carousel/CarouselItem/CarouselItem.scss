@@ -70,10 +70,6 @@
   &__price {
     font-size: 14px;
 
-    &:after {
-      content: " $";
-    }
-
     &_old {
       margin-left: 1rem;
       text-decoration: line-through;

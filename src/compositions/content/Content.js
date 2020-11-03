@@ -11,7 +11,7 @@ export function Content() {
     <div className="content">
       <Primary />
       <Regular />
-      <Carousel title={carousel.title} />
+      <Carousel title={carousel.title} items={carousel.items} />
     </div>
   );
 }
