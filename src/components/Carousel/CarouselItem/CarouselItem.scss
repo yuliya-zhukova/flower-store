@@ -1,23 +1,5 @@
-.product {
-  &__window {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-
-    background-color: palevioletred;
-    border: 1px solid red;
-  }
-
-  &__row {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-
-    left: 0;
-  }
-
-  &__row-item {
+.carousel {
+  &__element {
     width: 300px;
     padding-right: 40px;
     box-sizing: border-box;
@@ -33,7 +15,7 @@
       font-size: 18px;
     }
 
-    &:hover .product__button-block {
+    &:hover .carousel__button-block {
       visibility: visible;
     }
   }

@@ -1,73 +1,85 @@
 .button {
-    border: none;
-    border-radius: 5px;
-    padding: 1rem;
-    background-color: #aaa;
-    color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #aaa;
+  color: white;
 
-    &::after {
-        content: "→";
-        padding-left: 0.5rem;
-    }
+  &::after {
+    content: "→";
+    padding-left: 0.5rem;
+  }
+
+  &:hover {
+    background-color: #ccc;
+  }
+
+  &:active {
+    background-color: #ddd;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+
+  &:-moz-focusring {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  &_transparent {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
 
     &:hover {
-        background-color: #ccc;
+      color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
     }
 
     &:active {
-        background-color: #ddd;
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  &__carousel-item {
+    width: 46px;
+    height: 46px;
+    background-color: white;
+    outline: none;
+    padding: 0;
+
+    &:hover {
+      background-color: lightpink;
     }
 
-    &:focus {
-        outline: none;
+    &_to-basket:after {
+      content: url("./basket-small.png");
+      padding: 0;
     }
 
-    &:focus-visible {
-        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+    &_like:after {
+      content: url("./heart-small.png");
+      padding: 0;
     }
+  }
 
-    &:-moz-focusring {
-        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+  &__nav-item {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: grey;
+
+    &_disable {
+      pointer-events: none;
+      cursor: default;
+      color: lightgray;
     }
-
-    &::-moz-focus-inner {
-        border: 0;
-    }
-
-    &_transparent {
-        color: #000;
-        background-color: rgba(0, 0, 0, 0);
-
-        &:hover {
-            color: rgba(0, 0, 0, 0.5);
-            background-color: rgba(0, 0, 0, 0);
-            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
-        }
-
-        &:active {
-            background-color:rgba(0, 0, 0, 0);
-        }
-    }
-
-    &__product {
-        width: 46px;
-        height: 46px;
-        background-color: white;
-        outline: none;
-        padding: 0;
-
-        &:hover {
-          background-color: lightpink;
-        }
-
-        &_to-basket:after {
-          content: url('./basket-small.png');
-          padding: 0;
-        }
-
-        &_like:after {
-          content: url('./heart-small.png');
-          padding: 0;
-        }
-      }
+  }
 }

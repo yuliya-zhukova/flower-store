@@ -15,19 +15,19 @@ export class Carousel extends React.Component {
 
   render() {
     return (
-      <div className="section">
-        <div className="section__slider">
-          <div className="section__header">
-            <h3 className="section__title">
-              {this.props.title} - {this.carouselType}
+      <div className="carousel">
+        <div className="carousel__slider">
+          <div className="carousel__header">
+            <h3 className="carousel__title">
+              {this.props.title}
             </h3>
-            <div className="section__navigation">
-              <Button title={"←"} clickEvent={this.handleButtonClickLeft} classNames={"section__nav-item section__nav-item_left"} />
-              <Button title={"→"} clickEvent={this.handleButtonClickRight}classNames={"section__nav-item section__nav-item_right"} />
+            <div className="carousel__controls">
+              <Button title="←" clickEvent={this.handleButtonClickLeft} classNames="button__nav-item" />
+              <Button title="→" clickEvent={this.handleButtonClickRight} classNames="button__nav-item" />
             </div>
           </div>
-          <div className="product__window">
-            <div className="product__row">
+          <div className="carousel__viewport">
+            <div className="carousel__item-list">
               {this.props.items.map(function (item, i) {
                 return (
                   <CarouselItem
