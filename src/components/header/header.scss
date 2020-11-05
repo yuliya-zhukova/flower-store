@@ -1,10 +1,10 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    &__center {
-        margin: 0;
-        text-transform: uppercase;
-    }
+  &__center {
+    margin: 0;
+    text-transform: uppercase;
+  }
 }

@@ -5,6 +5,17 @@
     box-sizing: border-box;
   }
 
+  &__button-block {
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 3rem;
+    box-sizing: border-box;
+  }
+
   &__item {
     &-info {
       text-align: center;
@@ -26,22 +37,10 @@
     overflow: hidden;
 
     & img {
-    width: 260px;
-
+      width: 260px;
       display: block;
       object-fit: contain;
     }
-  }
-
-  &__button-block {
-    visibility: hidden;
-    width: 100%;
-    position: absolute;
-    bottom: 2rem;
-    display: flex;
-    justify-content: space-around;
-    padding: 0 3rem;
-    box-sizing: border-box;
   }
 
   &__price-row {

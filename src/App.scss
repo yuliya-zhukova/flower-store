@@ -1,16 +1,16 @@
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 1rem;
-    background-color: white;
-    border-radius: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  background-color: white;
+  border-radius: 1rem;
 }
 
 .row {
-    width: 1160px;
-    margin: 0 auto;
+  width: 1160px;
+  margin: 0 auto;
 
-    &_footer {
-        width: 100%;
-    }
+  &_footer {
+    width: 100%;
+  }
 }

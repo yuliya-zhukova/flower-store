@@ -1,38 +1,36 @@
 .carousel {
-    &__slider {
-        margin-bottom: 100px;
-    }
+  &__slider {
+    margin-bottom: 100px;
+  }
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        padding: 2rem 0;
-    }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
 
-    &__title {
-        margin: 0;
-        font-size: 24px;
-    }
+  &__title {
+    margin: 0;
+    font-size: 24px;
+  }
 
-    &__controls {
-        display: flex;
-    }
+  &__controls {
+    display: flex;
+  }
 
-    &__viewport {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
+  &__viewport {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: palevioletred;
+    border: 1px solid red;
+  }
 
-        background-color: palevioletred;
-        border: 1px solid red;
-      }
-
-      &__item-list {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-
-        left: 0;
-      }
+  &__item-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    left: 0;
+  }
 }
