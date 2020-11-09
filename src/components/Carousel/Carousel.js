@@ -13,6 +13,14 @@ export class Carousel extends React.Component {
     console.log('Right')
   }
 
+  onToBasketClick() {
+    console.log("To the Basket!");
+  }
+
+  onToWishList() {
+    console.log("To the Wish List!");
+  }
+
   render() {
     return (
       <div className="carousel">
@@ -28,17 +36,17 @@ export class Carousel extends React.Component {
           </div>
           <div className="carousel__viewport">
             <div className="carousel__item-list">
-              {this.props.items.map(function (item, i) {
-                return (
-                  <CarouselItem
-                    image={item.image}
-                    name={item.name}
-                    price={item.price}
-                    oldPrice={item.oldPrice}
-                    key={i}
-                  />
-                );
-              })}
+              {this.props.items.map((item) => (
+                <CarouselItem
+                  image={item.image}
+                  name={item.name}
+                  price={item.price}
+                  oldPrice={item.oldPrice}
+                  key={item.id}
+                  toBasket={this.onToBasketClick}
+                  toWishList={this.onToWishList}
+                />
+              ))}
             </div>
           </div>
         </div>

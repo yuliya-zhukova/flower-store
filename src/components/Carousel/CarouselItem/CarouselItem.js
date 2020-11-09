@@ -3,14 +3,6 @@ import "./CarouselItem.scss";
 
 import { Button } from "../../button/Button";
 
-function toBasket() {
-  console.log("To the Basket!");
-}
-
-function toWishList() {
-  console.log("To the Wish List!");
-}
-
 export function CarouselItem(props) {
   return (
     <div className="carousel__item">
@@ -20,11 +12,11 @@ export function CarouselItem(props) {
           <div className="carousel__button-block">
             <Button
               classNames={"button button__carousel-item button__carousel-item_to-basket"}
-              clickEvent={toBasket}
+              clickEvent={props.toBasket}
             />
             <Button
               classNames={"button button__carousel-item button__carousel-item_like"}
-              clickEvent={toWishList}
+              clickEvent={props.toWishList}
             />
           </div>
         </div>
