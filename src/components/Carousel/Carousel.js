@@ -13,20 +13,12 @@ export class Carousel extends React.Component {
     console.log('Right')
   }
 
-  onToBasketClick(id) {
-    if (!id) {
-      console.error('Id is required.');
-    } else {
-      console.log(id + " add to Basket.");
-    }
+  onToBasketClick = (id) => {
+    this.props.onToBasket(id);
   }
 
-  onToWishList(id) {
-    if (!id) {
-      console.error('Id is required.');
-    } else {
-      console.log(id + " add to Wish List.");
-    }
+  onToWishList = (id) => {
+    this.props.onToWishList(id);
   }
 
   render() {
