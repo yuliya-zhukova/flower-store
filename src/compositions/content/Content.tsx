@@ -1,13 +1,18 @@
-import React from "react";
-import "./Content.scss";
+import React from 'react';
+import './Content.scss';
 
-import { Primary } from "../../components/primary/Primary";
-import { Regular } from "../../components/regular/Regular";
-import { Carousel } from "../../components/Carousel/Carousel";
-import { carousel } from "../../demoData/carousel";
+import { Primary } from '../../components/primary/Primary';
+import { Regular } from '../../components/regular/Regular';
+import { Carousel } from '../../components/Carousel/Carousel';
+import { carousel } from '../../demoData/carousel';
 
-export class Content extends React.Component {
-  constructor(props) {
+interface ContentState {
+  basket: string[];
+  wishList: string[];
+}
+
+export class Content extends React.Component<{}, ContentState> {
+  constructor (props) {
     super(props);
 
     this.state = {
@@ -16,7 +21,7 @@ export class Content extends React.Component {
     };
   }
 
-  onToBasket = (id) => {
+  onToBasket = (id: string): void => {
     const basket = this.state.basket;
 
     basket.push(id);
@@ -26,7 +31,7 @@ export class Content extends React.Component {
     });
   }
 
-  onToWishList = (id) => {
+  onToWishList = (id: string): void => {
     const wishList = this.state.wishList;
 
     wishList.push(id);
@@ -36,9 +41,7 @@ export class Content extends React.Component {
     });
   }
 
-  render() {
-    console.log(this.state);
-
+  render (): JSX.Element {
     return (
       <div className="content">
         <Primary />

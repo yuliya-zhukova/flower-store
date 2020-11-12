@@ -2,10 +2,16 @@ import React from 'react';
 
 import './Button.scss';
 
-export function Button ({ clickEvent, title, classNames }) {
+export interface ButtonProps {
+  title?: string;
+  classNames: string;
+  clickEvent: () => void;
+}
+
+export function Button (props: ButtonProps): JSX.Element {
   return (
-    <button type="button" className={classNames} onClick={clickEvent}>
-      {title}
+    <button type="button" className={props.classNames} onClick={props.clickEvent}>
+      {props.title}
     </button>
   );
 }

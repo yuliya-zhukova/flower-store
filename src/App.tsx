@@ -5,7 +5,7 @@ import { Header } from './components/header/Header';
 import { Content } from './compositions/content/Content';
 import { Footer } from './components/footer/Footer';
 
-export default function App() {
+export default function App (): JSX.Element {
   return (
     <div className="container">
       <header className="row">

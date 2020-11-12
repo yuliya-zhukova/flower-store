@@ -1,30 +1,36 @@
-import React from "react";
-import "./CarouselItem.scss";
+import React from 'react';
+import './CarouselItem.scss';
 
-import { Button } from "../../button/Button";
+import { Button } from '../../button/Button';
+import { CarouselItemData } from '../../../demoData/carousel';
 
-export class CarouselItem extends React.Component {
-  onToBasket = () => {
+export interface CarouselItemProps extends CarouselItemData {
+  toBasket: (id: string) => void;
+  toWishList: (id: string) => void;
+}
+
+export class CarouselItem extends React.Component<CarouselItemProps> {
+  onToBasket = (): void => {
     this.props.toBasket(this.props.id);
   }
 
-  onToWishList = () => {
+  onToWishList = (): void => {
     this.props.toWishList(this.props.id);
   }
 
-  render() {
+  render (): JSX.Element {
     return (
       <div className="carousel__item">
         <div className="carousel__element">
           <div className="carousel__image">
-            <img src={this.props.image} alt="New"></img>
+            <img src={this.props.image} alt="New"/>
             <div className="carousel__button-block">
               <Button
-                classNames={"button button__carousel-item button__carousel-item_to-basket"}
+                classNames="button button__carousel-item button__carousel-item_to-basket"
                 clickEvent={this.onToBasket}
               />
               <Button
-                classNames={"button button__carousel-item button__carousel-item_like"}
+                classNames="button button__carousel-item button__carousel-item_like"
                 clickEvent={this.onToWishList}
               />
             </div>
@@ -45,5 +51,5 @@ export class CarouselItem extends React.Component {
         </div>
       </div>
     );
-  };
+  }
 }
