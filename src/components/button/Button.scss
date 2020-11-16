@@ -74,12 +74,18 @@
   &__nav-item {
     margin-left: 1rem;
     text-decoration: none;
-    color: grey;
+    color: darkgrey;
+    padding: 10px 15px;
 
     &_disable {
       pointer-events: none;
       cursor: default;
       color: lightgray;
     }
+  }
+
+  &.button__nav-item::after {
+    content: "";
+    padding: 0;
   }
 }
