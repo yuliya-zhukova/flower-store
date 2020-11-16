@@ -32,5 +32,9 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     left: 0;
+
+    &_translate {
+      transform: translateX(-150px);
+    }
   }
 }
