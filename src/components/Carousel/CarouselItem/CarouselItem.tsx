@@ -26,11 +26,11 @@ export class CarouselItem extends React.Component<CarouselItemProps> {
             <img src={this.props.image} alt="New"/>
             <div className="carousel__button-block">
               <Button
-                classNames="button button__carousel-item button__carousel-item_to-basket"
+                className="button button__carousel-item button__carousel-item_to-basket"
                 clickEvent={this.onToBasket}
               />
               <Button
-                classNames="button button__carousel-item button__carousel-item_like"
+                className="button button__carousel-item button__carousel-item_like"
                 clickEvent={this.onToWishList}
               />
             </div>
