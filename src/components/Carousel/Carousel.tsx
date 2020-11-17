@@ -46,9 +46,12 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
   }
 
   render (): JSX.Element {
-    const itemListClassName = this.state.visibleIndex > 0 ?
-      'carousel__item-list carousel__item-list_translate' :
-      'carousel__item-list';
+    const itemWidth = 300;
+    const itemsInPage = 3;
+    const offset = -this.state.visibleIndex * itemWidth;
+    const itemListStyle = (this.state.visibleIndex > 0) && ((this.props.items.length - this.state.visibleIndex)) >= itemsInPage ?
+      { transform: `translateX(${offset}px)` } :
+      {};
 
     return (
       <div className="carousel">
@@ -58,12 +61,12 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
               {this.props.title}
             </h3>
             <div className="carousel__controls">
-              <Button title="←" clickEvent={this.handleButtonClickLeft} classNames="button button_transparent button__nav-item" />
-              <Button title="→" clickEvent={this.handleButtonClickRight} classNames="button button_transparent button__nav-item" />
+              <Button title="←" clickEvent={this.handleButtonClickLeft} className="button button_transparent button__nav-item" style={{ color: 'red' }} disabled={true} />
+              <Button title="→" clickEvent={this.handleButtonClickRight} className="button button_transparent button__nav-item" />
             </div>
           </div>
           <div className="carousel__viewport">
-            <div className={itemListClassName}>
+            <div className="carousel__item-list" style={itemListStyle}>
               {this.props.items.map((item: CarouselItemData): JSX.Element => (
                 <CarouselItem
                   image={item.image}
