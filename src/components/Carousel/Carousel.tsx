@@ -25,8 +25,10 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
     };
   }
 
-  handleButtonClickLeft (): void {
-    console.log('Left');
+  private handleButtonClickLeft = (): void => {
+    this.setState({
+      visibleIndex: this.state.visibleIndex - 1
+    });
   }
 
   private handleButtonClickRight = (): void => {
@@ -49,7 +51,8 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
     const itemWidth = 300;
     const itemsInPage = 3;
     const offset = -this.state.visibleIndex * itemWidth;
-    const itemListStyle = (this.state.visibleIndex > 0) && ((this.props.items.length - this.state.visibleIndex)) >= itemsInPage ?
+
+    const itemListStyle = (this.state.visibleIndex > 0) && ((this.props.items.length - this.state.visibleIndex) >= itemsInPage) ?
       { transform: `translateX(${offset}px)` } :
       {};
 
@@ -61,7 +64,7 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
               {this.props.title}
             </h3>
             <div className="carousel__controls">
-              <Button title="←" clickEvent={this.handleButtonClickLeft} className="button button_transparent button__nav-item" style={{ color: 'red' }} disabled={true} />
+              <Button title="←" clickEvent={this.handleButtonClickLeft} className="button button_transparent button__nav-item" style={{ color: 'red' }} />
               <Button title="→" clickEvent={this.handleButtonClickRight} className="button button_transparent button__nav-item" />
             </div>
           </div>
