@@ -48,13 +48,18 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
   }
 
   render (): JSX.Element {
+    console.log(this.state.visibleIndex);
     const itemWidth = 300;
-    const itemsInPage = 3;
+    const itemsInPage = 4;
     const offset = -this.state.visibleIndex * itemWidth;
 
-    const itemListStyle = (this.state.visibleIndex > 0) && ((this.props.items.length - this.state.visibleIndex) >= itemsInPage) ?
+    const itemListStyle = (this.state.visibleIndex > 0) && ((this.props.items.length - this.state.visibleIndex) >= itemsInPage - 1) ?
       { transform: `translateX(${offset}px)` } :
       {};
+    const disabledLeftButton = this.state.visibleIndex === 0 ?
+      true : false;
+    const disabledRightButton = (this.props.items.length - this.state.visibleIndex) >= itemsInPage ?
+      false : true;
 
     return (
       <div className="carousel">
@@ -64,8 +69,8 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
               {this.props.title}
             </h3>
             <div className="carousel__controls">
-              <Button title="←" clickEvent={this.handleButtonClickLeft} className="button button_transparent button__nav-item" style={{ color: 'red' }} />
-              <Button title="→" clickEvent={this.handleButtonClickRight} className="button button_transparent button__nav-item" />
+              <Button title="←" clickEvent={this.handleButtonClickLeft} className="button button_transparent button__nav-item" disabled={disabledLeftButton} />
+              <Button title="→" clickEvent={this.handleButtonClickRight} className="button button_transparent button__nav-item" disabled={disabledRightButton} />
             </div>
           </div>
           <div className="carousel__viewport">
