@@ -12,7 +12,13 @@ export function Button (props: ButtonProps): JSX.Element {
   const { title, clickEvent, ...restProps }: ButtonProps = props;
 
   return (
-    <button type="button" onClick={clickEvent} className={props.className} style={props.style} {...restProps}>
+    <button
+      type="button"
+      onClick={clickEvent}
+      className={props.className}
+      style={props.style}
+      {...restProps}
+    >
       {title}
     </button>
   );
