@@ -24,6 +24,16 @@
     &-title {
       margin-bottom: 8px;
       font-size: 18px;
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      padding: 0 5px;
+      box-sizing: border-box;
+      text-overflow: ellipsis;
+    }
+
+    &:hover .carousel__item-title {
+      white-space: normal;
     }
 
     &:hover .carousel__button-block {
