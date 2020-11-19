@@ -49,6 +49,8 @@ export class Content extends React.Component<{}, ContentState> {
         <Carousel
           title={carousel.title}
           items={carousel.items}
+          seeMoreTitle={carousel.seeMoreTitle}
+          seeMoreLink={carousel.seeMoreLink}
           onToBasket={this.onToBasket}
           onToWishList={this.onToWishList}
         />

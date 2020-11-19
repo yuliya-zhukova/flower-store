@@ -10,6 +10,8 @@ interface CarouselProps {
   onToWishList: (id: string) => void;
   title: string;
   items: CarouselItemData[];
+  seeMoreTitle?: string;
+  seeMoreLink?: string;
 }
 
 interface CarouselState {
@@ -45,6 +47,10 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
   onToWishList = (id: string): void => {
     console.log(id + ' to the WishList.');
     this.props.onToWishList(id);
+  }
+
+  pressButton (): void {
+    console.log('See more!');
   }
 
   render (): JSX.Element {
@@ -87,6 +93,14 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
                   toWishList={this.onToWishList}
                 />
               ))}
+              <div className="carousel__see-more">
+                <h3 className="carousel__see-more_title">
+                  {this.props.seeMoreTitle}
+                </h3>
+                <a href={this.props.seeMoreLink}>
+                  <Button className="button button_transparent button__see-more" clickEvent={this.pressButton} title="See more" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

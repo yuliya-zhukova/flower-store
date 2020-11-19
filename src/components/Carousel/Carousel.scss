@@ -35,4 +35,13 @@
       transform: translateX(-150px);
     }
   }
+
+  &__see-more {
+    min-width: 260px;
+
+    &_title {
+      margin: 4rem 0 0.5rem;
+      padding-left: 2rem;
+    }
+  }
 }

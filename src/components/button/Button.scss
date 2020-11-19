@@ -88,4 +88,13 @@
     content: "";
     padding: 0;
   }
+
+  &__see-more {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+
+    &::after {
+      padding-left: 3rem;
+    }
+  }
 }

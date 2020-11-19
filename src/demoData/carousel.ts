@@ -8,6 +8,8 @@ export interface CarouselItemData {
 
 export const carousel = {
   title: 'Relevant',
+  seeMoreTitle: 'Catalog',
+  seeMoreLink: '/',
   items: [
     {
       id: '123',
