@@ -93,13 +93,15 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
                   toWishList={this.onToWishList}
                 />
               ))}
-              <div className="carousel__see-more">
-                <h3 className="carousel__see-more_title">
-                  {this.props.seeMoreTitle}
-                </h3>
-                <a href={this.props.seeMoreLink}>
-                  <Button className="button button_transparent button__see-more" clickEvent={this.pressButton} title="See more" />
-                </a>
+              <div className="carousel__last-item">
+                <div className="carousel__see-more">
+                  <h3 className="carousel__see-more-title">
+                    {this.props.seeMoreTitle}
+                  </h3>
+                  <a href={this.props.seeMoreLink} className="content__link">
+                    See more
+                  </a>
+                </div>
               </div>
             </div>
           </div>

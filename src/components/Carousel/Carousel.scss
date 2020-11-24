@@ -36,12 +36,20 @@
     }
   }
 
-  &__see-more {
+  &__last-item {
     min-width: 260px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(244, 244, 244, 0.5);
+  }
 
-    &_title {
-      margin: 4rem 0 0.5rem;
-      padding-left: 2rem;
+  &__see-more {
+    margin-left: 50px;
+
+    &-title {
+      margin: 0 0 20px;
     }
   }
 }
