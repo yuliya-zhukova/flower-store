@@ -75,8 +75,8 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
               {this.props.title}
             </h3>
             <div className="carousel__controls">
-              <Button title="←" clickEvent={this.handleButtonClickLeft} className="button button_transparent button__nav-item" disabled={disabledLeftButton} />
-              <Button title="→" clickEvent={this.handleButtonClickRight} className="button button_transparent button__nav-item" disabled={disabledRightButton} />
+              <Button clickEvent={this.handleButtonClickLeft} className="button button__nav-item button__nav-item_left" disabled={disabledLeftButton} />
+              <Button clickEvent={this.handleButtonClickRight} className="button button__nav-item button__nav-item_right" disabled={disabledRightButton} />
             </div>
           </div>
           <div className="carousel__viewport">

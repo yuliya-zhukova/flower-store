@@ -1,14 +1,8 @@
 .button {
   border: none;
   border-radius: 5px;
-  padding: 1rem;
-  background-color: #aaa;
-  color: white;
-
-  &::after {
-    content: "→";
-    padding-left: 0.5rem;
-  }
+  height: 46px;
+  background-color: white;
 
   &:-moz-focus-inner {
     border: 0;
@@ -34,67 +28,34 @@
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
   }
 
-  &_transparent {
-    color: #000;
-    background-color: rgba(0, 0, 0, 0);
-
-    &:hover {
-      color: rgba(0, 0, 0, 0.5);
-      background-color: rgba(0, 0, 0, 0);
-      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
-    }
-
-    &:active {
-      background-color: rgba(0, 0, 0, 0);
-    }
-  }
-
   &__carousel-item {
-    width: 46px;
-    height: 46px;
-    background-color: white;
     outline: none;
-    padding: 0;
-
-    &:hover {
-      background-color: lightpink;
-    }
+    width: 46px;
 
     &_to-basket::after {
       content: url("./basket-small.png");
-      padding: 0;
     }
 
     &_like::after {
       content: url("./heart-small.png");
-      padding: 0;
     }
   }
 
   &__nav-item {
-    margin-left: 1rem;
+    margin-left: 10px;
     text-decoration: none;
-    color: darkgrey;
     padding: 10px 15px;
 
-    &_disable {
-      pointer-events: none;
-      cursor: default;
-      color: lightgray;
+    &_left::after {
+      content: url("./arrow-left.png");
     }
-  }
 
-  &.button__nav-item::after {
-    content: "";
-    padding: 0;
-  }
+    &_right::after {
+      content: url("./arrow-right.png");
+    }
 
-  &__see-more {
-    margin-left: 1rem;
-    padding: 0.5rem 1rem;
-
-    &::after {
-      padding-left: 3rem;
+    &:disabled {
+      opacity: 0.2;
     }
   }
 }
