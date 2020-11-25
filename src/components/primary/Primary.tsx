@@ -2,13 +2,6 @@ import React from 'react';
 import './Primary.scss';
 
 import { primaryItem } from '../../demoData/primaryItem';
-import { Button } from '../button/Button';
-
-const buttonName = 'Shop now';
-
-function pressButton (): void {
-  console.log('Bamm!');
-}
 
 export function Primary (): JSX.Element {
   const image_big = 'images/image_big.png';
@@ -23,7 +16,11 @@ export function Primary (): JSX.Element {
           <p className="primary__description">
               {primaryItem.description}
           </p>
-          <Button className="button" clickEvent={pressButton} title={buttonName} />
+          <div className="primary__link-block">
+            <a href="/" className="content__link">
+              Show now
+            </a>
+          </div>
         </div>
     </div>
   );

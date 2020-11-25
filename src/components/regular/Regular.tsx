@@ -2,13 +2,6 @@ import React from 'react';
 import './Regular.scss';
 
 import { regularList } from '../../demoData/regularList';
-import { Button } from '../button/Button';
-
-const buttonName = 'View now';
-
-function pressButton (): void {
-  console.log('Ba-bamm!');
-}
 
 export function Regular (): JSX.Element {
   const image_middle = 'images/image_middle.png';
@@ -22,7 +15,9 @@ export function Regular (): JSX.Element {
             <div className="regular__info">
               <h2 className="regular__title">{regularItem.title}</h2>
               <p className="regular__description">{regularItem.description}</p>
-              <Button className="button button_transparent" clickEvent={pressButton} title={buttonName}/>
+              <a href="/" className="content__link">
+                View now
+              </a>
             </div>
           </div>
         );
