@@ -14,7 +14,7 @@ export const carousel = {
     {
       id: '123',
       image: '/images/image_small.png',
-      name: 'White-white-white-white-white-white-white-white-white roses, 7pc.',
+      name: 'Whitewhitewhitewhitewhitewhite roses, 7pc.',
       price: '44 $'
     },
     {
