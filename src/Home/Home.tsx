@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.scss';
-import { Navigation } from './components/navigation/Navigation';
-import { Header } from './components/header/Header';
-import { Content } from './compositions/content/Content';
-import { Footer } from './components/footer/Footer';
+import './Home.scss';
+import { Navigation } from '../components/navigation/Navigation';
+import { Header } from '../components/header/Header';
+import { Content } from '../compositions/content/Content';
+import { Footer } from '../components/footer/Footer';
 
-export default function App (): JSX.Element {
+export default function Home (): JSX.Element {
   return (
     <div className="container">
       <header className="row">
