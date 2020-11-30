@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../components/button/Button';
+import { Form } from '../components/Form/Form';
 import './ProductCard.scss';
 
 export default function ProductCard (): JSX.Element {
@@ -19,12 +19,8 @@ export default function ProductCard (): JSX.Element {
               <div className="product-card__price product-card__price_old">Oldprice</div>
             </div>
           </div>
-          <div className="form">
-            ComponentForm
-            <div className="product-card__controls">
-              <Button title="Order now" className="button button__product button__product_order-now" />
-              <Button className="button button__product button__product_to-basket"/>
-            </div>
+          <div className="product-card__form">
+            <Form />
           </div>
           <div className="accordeon">
             Accordeon
