@@ -58,4 +58,24 @@
       opacity: 0.2;
     }
   }
+
+  &__product {
+    height: 56px;
+
+    &_order-now {
+      width: 309px;
+      color: #fff;
+      background-color: #000;
+    }
+
+    &_to-basket {
+      width: 56px;
+      margin-left: 20px;
+      border: 1px solid #e6e6eb;
+
+      &::after {
+        content: url("./basket-small.png");
+      }
+    }
+  }
 }

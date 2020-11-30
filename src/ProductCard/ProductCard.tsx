@@ -21,8 +21,10 @@ export default function ProductCard (): JSX.Element {
           </div>
           <div className="form">
             ComponentForm
-            <Button />
-            <Button />
+            <div className="product-card__controls">
+              <Button title="Order now" className="button button__product button__product_order-now" />
+              <Button className="button button__product button__product_to-basket"/>
+            </div>
           </div>
           <div className="accordeon">
             Accordeon
