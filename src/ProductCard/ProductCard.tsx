@@ -22,8 +22,8 @@ export default function ProductCard (): JSX.Element {
           <div className="product-card__form">
             <Form />
           </div>
-          <div className="accordeon">
-            Accordeon
+          <div className="accordion">
+            Accordion
           </div>
         </div>
       </div>
