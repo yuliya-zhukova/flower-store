@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form } from '../components/Form/Form';
+import { Accordion } from '../components/Accordion/Accordion';
 import './ProductCard.scss';
 
 export default function ProductCard (): JSX.Element {
@@ -22,8 +23,8 @@ export default function ProductCard (): JSX.Element {
           <div className="product-card__form">
             <Form />
           </div>
-          <div className="accordion">
-            Accordion
+          <div className="product-card__accordion">
+            <Accordion />
           </div>
         </div>
       </div>

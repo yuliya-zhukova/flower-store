@@ -1,0 +1,28 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    border-bottom: 1px solid #e6e6eb;
+
+    &-title {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    &-content {
+        overflow: hidden;
+        display: none;
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__input:checked ~ &__container-content {
+    display: block;
+  }
+}
