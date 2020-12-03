@@ -86,12 +86,16 @@
     border-radius: 50%;
     padding: 0;
 
+    &::after {
+      font-size: 20px;
+    }
+
     &_less::after {
-      content: url("./less.png");
+      content: "−";
     }
 
     &_more::after {
-      content: url("./more.png");
+      content: "+";
     }
 
     &_color {

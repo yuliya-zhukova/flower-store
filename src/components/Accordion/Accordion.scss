@@ -7,7 +7,7 @@
 
     &-header {
       font-size: 14px;
-      padding: 20px 0;
+      padding: 16px 0;
       display: flex;
 
       &:hover {
@@ -15,9 +15,10 @@
       }
 
       &::after {
-        content: url("../button/more.png");
+        content: "+";
         position: absolute;
-        right: 0;
+        right: 10px;
+        font-size: 24px;
       }
     }
 
@@ -38,7 +39,7 @@
   }
 
   &__input:checked ~ &__container-header::after {
-    content: url("../button/less.png");
+    content: "−";
   }
 
 }
