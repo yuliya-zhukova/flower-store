@@ -12,7 +12,7 @@ export function Accordion (): JSX.Element {
         />
         <label
           htmlFor="item1"
-          className="accordion__container-header accordion__container-header_checked"
+          className="accordion__container-header"
         >
           Details
         </label>
