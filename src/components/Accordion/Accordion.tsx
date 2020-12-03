@@ -14,7 +14,7 @@ export function Accordion (): JSX.Element {
           htmlFor="item1"
           className="accordion__container-header accordion__container-header_checked"
         >
-          <div className="accordion__container-title">Details</div>
+          Details
         </label>
         <div className="accordion__container-content">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,

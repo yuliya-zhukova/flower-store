@@ -5,16 +5,27 @@
   &__container {
     border-bottom: 1px solid #e6e6eb;
 
-    &-title {
-        font-size: 14px;
-        margin: 20px 0;
+    &-header {
+      font-size: 14px;
+      padding: 20px 0;
+      display: flex;
+
+      &:hover {
+        background-color: #ccc;
+      }
+
+      &::after {
+        content: url("../button/more.png");
+        position: absolute;
+        right: 0;
+      }
     }
 
     &-content {
-        overflow: hidden;
-        display: none;
-        font-size: 12px;
-        padding-bottom: 20px;
+      overflow: hidden;
+      display: none;
+      font-size: 12px;
+      padding-bottom: 20px;
     }
   }
 
@@ -25,4 +36,9 @@
   &__input:checked ~ &__container-content {
     display: block;
   }
+
+  &__input:checked ~ &__container-header::after {
+    content: url("../button/less.png");
+  }
+
 }
