@@ -26,7 +26,7 @@ export function Form (): JSX.Element {
     <div className="form">
       <div className="form__item">
         <div className="form__item-name">Count:</div>
-        <div className="form__select">
+        <div className="form__select form__select_number">
           <Button className="button button__round button__round_less" />
           <div className="form__quantity">25</div>
           <Button className="button button__round button__round_more" />
