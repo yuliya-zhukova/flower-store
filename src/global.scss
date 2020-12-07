@@ -3,3 +3,21 @@ body {
   background-color: lightgray;
   font-family: 'Montserrat', sans-serif;
 }
+
+.container {
+  width: 80%;
+  min-width: 1220px;
+  margin: 0 auto;
+  padding-top: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.row {
+  width: 1160px;
+  margin: 0 auto;
+
+  &_footer {
+    width: 100%;
+  }
+}

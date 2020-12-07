@@ -1,11 +1,7 @@
 .product-card {
-  padding: 20px;
-  background-color: white;
   box-sizing: border-box;
 
   &__body {
-    min-width: 1220px;
-    max-width: 1220px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -13,12 +9,11 @@
 
   &__side {
     min-width: 50%;
-    text-align: right;
-    outline: 1px solid greenyellow;
+    text-align: left;
   }
 
   &__details {
-    width: 522px;
+    width: 50%;
     position: relative;
     margin-left: 70px;
   }
