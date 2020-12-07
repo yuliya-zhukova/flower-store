@@ -4,6 +4,7 @@ import { Header } from '../components/header/Header';
 import { Content } from '../compositions/content/Content';
 import { Footer } from '../components/footer/Footer';
 import { ProductCard } from '../ProductCard/ProductCard';
+import { Breadcrumbs } from '../components/Breadcrumbs/Breadcrumbs';
 
 export function Home (): JSX.Element {
   return (
@@ -12,6 +13,9 @@ export function Home (): JSX.Element {
         <Header />
         <Navigation />
       </header>
+      <div className="row">
+        <Breadcrumbs />
+      </div>
       <div className="row">
         <ProductCard />
       </div>
