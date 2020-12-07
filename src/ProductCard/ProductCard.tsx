@@ -3,7 +3,7 @@ import { Form } from '../components/Form/Form';
 import { Accordion } from '../components/Accordion/Accordion';
 import './ProductCard.scss';
 
-export default function ProductCard (): JSX.Element {
+export function ProductCard (): JSX.Element {
   const productImage = 'images/product-card.png';
 
   return (

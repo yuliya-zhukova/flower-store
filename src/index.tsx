@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './global.scss';
-import ProductCard from './ProductCard/ProductCard';
+import { Home } from './Home/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ProductCard />
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );

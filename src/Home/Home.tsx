@@ -1,17 +1,20 @@
 import React from 'react';
-import './Home.scss';
 import { Navigation } from '../components/navigation/Navigation';
 import { Header } from '../components/header/Header';
 import { Content } from '../compositions/content/Content';
 import { Footer } from '../components/footer/Footer';
+import { ProductCard } from '../ProductCard/ProductCard';
 
-export default function Home (): JSX.Element {
+export function Home (): JSX.Element {
   return (
     <div className="container">
       <header className="row">
         <Header />
         <Navigation />
       </header>
+      <div className="row">
+        <ProductCard />
+      </div>
       <main className="row">
         <Content />
       </main>
