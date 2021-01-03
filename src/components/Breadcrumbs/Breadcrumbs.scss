@@ -1,0 +1,39 @@
+.breadcrumbs {
+  font-size: 12px;
+
+  &__list {
+    display: flex;
+    padding-left: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &::after {
+      content: "/";
+      margin-left: 10px;
+    }
+
+    &:last-child {
+      font-weight: bold;
+    }
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
